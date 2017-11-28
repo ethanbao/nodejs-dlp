@@ -1,4 +1,4 @@
-// Copyright 2017, Google Inc. All rights reserved.
+// Copyright 2017, Google LLC All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -37,8 +37,7 @@ describe('DlpServiceSmokeTest', () => {
       inspectConfig: inspectConfig,
       items: items,
     };
-    client
-      .inspectContent(request)
+    client.inspectContent(request)
       .then(responses => {
         var response = responses[0];
         console.log(response);
